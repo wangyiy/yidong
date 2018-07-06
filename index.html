@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>移动端</title>
+	<link rel="stylesheet" href="css/repeat.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="font/iconfont.css">
+	<meta id="viewport" name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=0">
+	<script>
+    window.onload = window.onresize = function(){		 
+        var view_width = document.getElementsByTagName('html')[0].getBoundingClientRect().width;
+		//找到标签名为html的第一个
+        var _html = document.getElementsByTagName('html')[0];
+		//如果屏幕宽度大于640 
+		//就用 640/16=40
+		//小于640的时候 不确定 也是尺寸/40
+        view_width>640?_html.style.fontSize = 640 / 16 + 'px':_html.style.fontSize = view_width / 16 + 'px';
+		//最大网页尺寸640 
+		//最大字体（根字体大小） 40
+    }
+	</script>
+</head>
+<body>
+	<!-- 头部 -->
+	<header>
+		<div class="hd_top clearfix">
+			<em class="iconfont fl">&#xe67a;</em>
+			<h5 class="fl">Woman, Dresses</h5>
+			<span class="iconfont fr">&#xe692;<i>3</i></span>
+		</div>
+		<div class="hd_bom clearfix">
+			<a href="#" class="a1 fl">add to wishlist</a>
+			<a href="#" class="a2 fr">add to cart</a>
+		</div>
+	</header>
+	<!-- 内容 -->
+	<div class="content">
+		<div class="banner">
+			<img src="images/ren.png" alt="">
+			<div class="ba_bom clearfix">
+				<p class="p1 fl">Elegant Pink Dresses</p>
+				<p class="p2 fr">$605,00</p>
+			</div>
+		</div>
+		<div class="con1 clearfix">
+			<i class="iconfont icon-jiahao fl"></i>
+			<p class="fl">Description</p>
+		</div>
+		<div class="con2">
+			<div class="con2_top">
+				<h6><i class="iconfont icon-icon75"></i>Colour:</h6>
+				<p>Choose a colour for item</p>
+				<strong class="clearfix">
+					<em class="em1 fl"><i class="iconfont icon-duigou"></i></em>
+					<em class="em2 fl"></em>
+					<em class="em3 fl"></em>
+				</strong>
+			</div>
+			<div class="con2_bom">
+				<h6><i class="iconfont icon-1"></i>Size:</h6>
+				<p>Size available for this item</p>
+				<ul class="clearfix">
+					<li>6</li>
+					<li>8</li>
+					<li>10</li>
+					<li>12</li>
+					<li>14</li>
+				</ul>
+			</div>
+		</div>
+		<div class="con3">
+			<a href="#">Add to Cart</a>
+		</div>
+		<div class="con4">
+			<div class="con4_top clearfix">
+				<h6 class="fl">SHARE ON</h6>
+				<span class="fl"></span>
+			</div>
+			<ul class="clearfix">
+				<li class="li1 fl clearfix">
+					<em class="fl">
+						<strong></strong>
+					</em>
+					<i class="fl">205</i>
+				</li>
+				<li class="li2 fl clearfix">
+					<em class="fl">
+						<strong>f</strong>
+					</em>
+					<i class="fl">332</i>
+				</li>
+				<li class="li3 fl clearfix">
+					<em class="fl">
+						<strong></strong>
+					</em>
+					<i class="fl">112</i>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
